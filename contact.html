@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Marie Esther</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Esther<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="contact-container">
+
+            <p class="section-title">CONTACT</p>
+
+            <h2>Travaillons ensemble</h2>
+
+            <p class="contact-description">
+                Vous avez un projet, une opportunité de stage
+                ou simplement envie d'échanger ?
+                N'hésitez pas à me contacter.
+            </p>
+
+            <div class="contact-content">
+
+                <div class="contact-info">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>esthergando004@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Localisation</h3>
+                            <p>Cotonou, Bénin</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💻</div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>Mes projets informatiques</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form class="contact-form"
+                      action="https://formsubmit.co/esthergando004@gmail.com"
+                      method="POST">
+
+                    <input type="hidden" name="_subject"
+                           value="Nouveau message depuis mon portfolio">
+
+                    <input type="text"
+                           name="name"
+                           placeholder="Votre nom"
+                           required>
+
+                    <input type="email"
+                           name="email"
+                           placeholder="Votre adresse email"
+                           required>
+
+                    <input type="text"
+                           name="subject"
+                           placeholder="Sujet"
+                           required>
+
+                    <textarea name="message"
+                              placeholder="Votre message..."
+                              rows="6"
+                              required></textarea>
+
+                    <button type="submit" class="btn primary">
+                        Envoyer le message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <a href="index.html" class="logo">Esther<span>.</span></a>
+
+            <p>
+                Développeuse Web en devenir | Marie Esther
+            </p>
+
+            <div class="social-links">
+
+                <a href="https://github.com/Tresor82" target="_blank" rel="noopener">GitHub</a>
+
+                <a href="https://www.linkedin.com/in/marie-esther-gando-2b0a843a9" target="_blank" rel="noopener">LinkedIn</a>
+
+                <a href="https://wa.me/2290168267479" target="_blank" rel="noopener">WhatsApp</a>
+
+                <a href="https://www.facebook.com/profile.php?id=61590139468585" target="_blank" rel="noopener">Facebook</a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Marie Esther. Tous droits réservés.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- BOUTON RETOUR EN HAUT -->
+    <button id="backToTop" title="Retour en haut">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
