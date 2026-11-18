@@ -764,3 +764,68 @@ section {
 .progress.tailwind {
     width: 60%;
 }
+
+/* AUTRES DOMAINES */
+
+.other-title {
+    margin-top: 80px;
+}
+
+.level-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.level-list span {
+    background: #29203d;
+    color: #d8b4fe;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* MA FAÇON DE TRAVAILLER */
+
+.values-title {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-values div {
+    padding: 25px;
+    background: #151522;
+    border: 1px solid #29203d;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.about-values div:hover {
+    border-color: #a855f7;
+    transform: translateY(-5px);
+}
+
+.about-values h4 {
+    color: #a855f7;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.about-values p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .about-values {
+        grid-template-columns: 1fr;
+    }
+}
