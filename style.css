@@ -829,3 +829,112 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+/* FOND AVEC LUEUR ANIMÉE */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(168, 85, 247, 0.20), transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(126, 34, 206, 0.18), transparent 45%);
+    animation: glowMove 12s ease-in-out infinite alternate;
+}
+
+@keyframes glowMove {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+    to {
+        transform: translate(30px, -20px) scale(1.1);
+    }
+}
+
+/* Sections transparentes pour laisser voir la lueur */
+.about,
+.skills,
+.projects,
+.contact {
+    background: transparent;
+}
+
+.footer {
+    background: rgba(13, 13, 24, 0.6);
+}
+
+/* BANDES DE MOTS QUI DÉFILENT */
+
+.marquee {
+    overflow: hidden;
+    padding: 18px 0;
+    background: rgba(21, 21, 34, 0.5);
+    border-top: 1px solid #29203d;
+    border-bottom: 1px solid #29203d;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee.reverse .marquee-track {
+    animation-direction: reverse;
+}
+
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.marquee-group {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.marquee-group span {
+    padding: 0 25px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #d8b4fe;
+    white-space: nowrap;
+}
+
+.marquee.reverse .marquee-group span {
+    color: #a855f7;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 600px) {
+    .marquee-group span {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation: none;
+    }
+}
+
+/* ILLUSTRATION D'ACCUEIL */
+
+.profile-placeholder {
+    overflow: hidden;
+}
+
+.profile-placeholder .avatar {
+    width: 100%;
+    height: 100%;
+}
