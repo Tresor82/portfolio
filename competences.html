@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétences | Marie Esther</title>
+    <title data-i18n="title_skills">Compétences | Marie Esther</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,11 +18,12 @@
             </button>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="apropos.html" data-i18n="nav_about">À propos</a></li>
+                <li><a href="competences.html" data-i18n="nav_skills">Compétences</a></li>
+                <li><a href="projets.html" data-i18n="nav_projects">Projets</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                <li><button class="lang-toggle" id="langToggle" type="button">EN</button></li>
             </ul>
         </nav>
     </header>
@@ -32,14 +33,11 @@
 
         <div class="skills-container">
 
-            <p class="section-title">MES COMPÉTENCES</p>
+            <p class="section-title" data-i18n="skills_label">MES COMPÉTENCES</p>
 
-            <h2>Ce que je sais faire</h2>
+            <h2 data-i18n="skills_h2">Ce que je sais faire</h2>
 
-            <p class="skills-description">
-                Je développe mes compétences techniques
-                pour concevoir des sites web modernes.
-            </p>
+            <p class="skills-description" data-i18n="skills_desc">Je développe mes compétences techniques pour concevoir des sites web modernes.</p>
 
             <div class="skills-grid">
 
@@ -51,7 +49,7 @@
                     <div class="progress-bar">
                         <div class="progress html"></div>
                     </div>
-                    <p>Structure des pages web</p>
+                    <p data-i18n="sk_html">Structure des pages web</p>
                 </div>
 
                 <div class="skill-card">
@@ -62,7 +60,7 @@
                     <div class="progress-bar">
                         <div class="progress css"></div>
                     </div>
-                    <p>Design et mise en page</p>
+                    <p data-i18n="sk_css">Design et mise en page</p>
                 </div>
 
                 <div class="skill-card">
@@ -73,7 +71,7 @@
                     <div class="progress-bar">
                         <div class="progress js"></div>
                     </div>
-                    <p>Interactions et animations</p>
+                    <p data-i18n="sk_js">Interactions et animations</p>
                 </div>
 
                 <div class="skill-card">
@@ -84,7 +82,7 @@
                     <div class="progress-bar">
                         <div class="progress github"></div>
                     </div>
-                    <p>Gestion de projets</p>
+                    <p data-i18n="sk_git">Gestion de projets</p>
                 </div>
 
                 <div class="skill-card">
@@ -95,7 +93,7 @@
                     <div class="progress-bar">
                         <div class="progress word"></div>
                     </div>
-                    <p>Traitement de texte</p>
+                    <p data-i18n="sk_word">Traitement de texte</p>
                 </div>
 
                 <div class="skill-card">
@@ -106,7 +104,7 @@
                     <div class="progress-bar">
                         <div class="progress excel"></div>
                     </div>
-                    <p>Tableaux et calculs</p>
+                    <p data-i18n="sk_excel">Tableaux et calculs</p>
                 </div>
 
                 <div class="skill-card">
@@ -117,7 +115,7 @@
                     <div class="progress-bar">
                         <div class="progress vue"></div>
                     </div>
-                    <p>Applications web modernes</p>
+                    <p data-i18n="sk_vue">Applications web modernes</p>
                 </div>
 
                 <div class="skill-card">
@@ -128,7 +126,7 @@
                     <div class="progress-bar">
                         <div class="progress python"></div>
                     </div>
-                    <p>Programmation et traitement de données</p>
+                    <p data-i18n="sk_python">Programmation et traitement de données</p>
                 </div>
 
                 <div class="skill-card">
@@ -139,7 +137,7 @@
                     <div class="progress-bar">
                         <div class="progress tensorflow"></div>
                     </div>
-                    <p>Intelligence artificielle</p>
+                    <p data-i18n="sk_tf">Intelligence artificielle</p>
                 </div>
 
                 <div class="skill-card">
@@ -150,45 +148,43 @@
                     <div class="progress-bar">
                         <div class="progress tailwind"></div>
                     </div>
-                    <p>Design rapide et moderne</p>
+                    <p data-i18n="sk_tailwind">Design rapide et moderne</p>
                 </div>
 
             </div>
 
             <!-- AUTRES DOMAINES -->
-            <h2 class="other-title">Autres domaines</h2>
+            <h2 class="other-title" data-i18n="other_title">Autres domaines</h2>
 
-            <p class="skills-description">
-                Au-delà du code, voici ce que j'apporte aussi.
-            </p>
+            <p class="skills-description" data-i18n="other_desc">Au-delà du code, voici ce que j'apporte aussi.</p>
 
             <div class="skills-grid">
 
                 <div class="skill-card">
                     <div class="skill-header">
-                        <h3>Création de contenu</h3>
+                        <h3 data-i18n="oth_content">Création de contenu</h3>
                     </div>
-                    <p>Vidéos courtes pour les réseaux sociaux, avec des outils d'intelligence artificielle.</p>
+                    <p data-i18n="oth_content_text">Vidéos courtes pour les réseaux sociaux, avec des outils d'intelligence artificielle.</p>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-header">
-                        <h3>Langues</h3>
+                        <h3 data-i18n="oth_lang">Langues</h3>
                     </div>
                     <div class="level-list">
-                        <span>Français : langue principale</span>
-                        <span>Anglais : en progression</span>
+                        <span data-i18n="oth_lang_fr">Français : langue principale</span>
+                        <span data-i18n="oth_lang_en">Anglais : en progression</span>
                     </div>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-header">
-                        <h3>Compétences personnelles</h3>
+                        <h3 data-i18n="oth_soft">Compétences personnelles</h3>
                     </div>
                     <div class="level-list">
-                        <span>Travail en équipe</span>
-                        <span>Organisation</span>
-                        <span>Rigueur</span>
+                        <span data-i18n="oth_team">Travail en équipe</span>
+                        <span data-i18n="oth_org">Organisation</span>
+                        <span data-i18n="oth_rigor">Rigueur</span>
                     </div>
                 </div>
 
@@ -198,6 +194,47 @@
 
     </section>
 
+    <!-- BANDES DE MOTS QUI DÉFILENT -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <div class="marquee-group">
+                <span data-i18n="mq_web">DÉVELOPPEMENT WEB</span><span>✦</span>
+                <span data-i18n="mq_ai">INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
+                <span>NUXT</span><span>✦</span>
+                <span>VUE.JS</span><span>✦</span>
+                <span>PYTHON</span><span>✦</span>
+                <span>TENSORFLOW</span><span>✦</span>
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+                <span data-i18n="mq_web">DÉVELOPPEMENT WEB</span><span>✦</span>
+                <span data-i18n="mq_ai">INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
+                <span>NUXT</span><span>✦</span>
+                <span>VUE.JS</span><span>✦</span>
+                <span>PYTHON</span><span>✦</span>
+                <span>TENSORFLOW</span><span>✦</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee reverse">
+        <div class="marquee-track">
+            <div class="marquee-group">
+                <span data-i18n="mq2_learn">APPRENDRE EN CONSTRUISANT</span><span>✦</span>
+                <span data-i18n="mq2_clarity">CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
+                <span data-i18n="mq2_detail">SOUCI DU DÉTAIL</span><span>✦</span>
+                <span data-i18n="mq2_creativity">CRÉATIVITÉ</span><span>✦</span>
+                <span data-i18n="mq2_rigor">RIGUEUR</span><span>✦</span>
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+                <span data-i18n="mq2_learn">APPRENDRE EN CONSTRUISANT</span><span>✦</span>
+                <span data-i18n="mq2_clarity">CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
+                <span data-i18n="mq2_detail">SOUCI DU DÉTAIL</span><span>✦</span>
+                <span data-i18n="mq2_creativity">CRÉATIVITÉ</span><span>✦</span>
+                <span data-i18n="mq2_rigor">RIGUEUR</span><span>✦</span>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer">
 
@@ -205,9 +242,7 @@
 
             <a href="index.html" class="logo">Esther<span>.</span></a>
 
-            <p>
-                Développeuse Web en devenir | Marie Esther
-            </p>
+            <p data-i18n="foot_tag">Développeuse Web en devenir | Marie Esther</p>
 
             <div class="social-links">
 
@@ -221,51 +256,9 @@
 
             </div>
 
-            <p class="copyright">
-                © 2026 Marie Esther. Tous droits réservés.
-            </p>
+            <p class="copyright" data-i18n="foot_copy">© 2026 Marie Esther. Tous droits réservés.</p>
 
         </div>
-            <!-- BANDES DE MOTS QUI DÉFILENT -->
-    <div class="marquee">
-        <div class="marquee-track">
-            <div class="marquee-group">
-                <span>DÉVELOPPEMENT WEB</span><span>✦</span>
-                <span>INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
-                <span>NUXT</span><span>✦</span>
-                <span>VUE.JS</span><span>✦</span>
-                <span>PYTHON</span><span>✦</span>
-                <span>TENSORFLOW</span><span>✦</span>
-            </div>
-            <div class="marquee-group" aria-hidden="true">
-                <span>DÉVELOPPEMENT WEB</span><span>✦</span>
-                <span>INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
-                <span>NUXT</span><span>✦</span>
-                <span>VUE.JS</span><span>✦</span>
-                <span>PYTHON</span><span>✦</span>
-                <span>TENSORFLOW</span><span>✦</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="marquee reverse">
-        <div class="marquee-track">
-            <div class="marquee-group">
-                <span>APPRENDRE EN CONSTRUISANT</span><span>✦</span>
-                <span>CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
-                <span>SOUCI DU DÉTAIL</span><span>✦</span>
-                <span>CRÉATIVITÉ</span><span>✦</span>
-                <span>RIGUEUR</span><span>✦</span>
-            </div>
-            <div class="marquee-group" aria-hidden="true">
-                <span>APPRENDRE EN CONSTRUISANT</span><span>✦</span>
-                <span>CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
-                <span>SOUCI DU DÉTAIL</span><span>✦</span>
-                <span>CRÉATIVITÉ</span><span>✦</span>
-                <span>RIGUEUR</span><span>✦</span>
-            </div>
-        </div>
-    </div>
 
     </footer>
 

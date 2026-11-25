@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets | Marie Esther</title>
+    <title data-i18n="title_projects">Projets | Marie Esther</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,11 +18,12 @@
             </button>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="apropos.html" data-i18n="nav_about">À propos</a></li>
+                <li><a href="competences.html" data-i18n="nav_skills">Compétences</a></li>
+                <li><a href="projets.html" data-i18n="nav_projects">Projets</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                <li><button class="lang-toggle" id="langToggle" type="button">EN</button></li>
             </ul>
         </nav>
     </header>
@@ -32,14 +33,11 @@
 
         <div class="projects-container">
 
-            <p class="section-title">MES RÉALISATIONS</p>
+            <p class="section-title" data-i18n="proj_label">MES RÉALISATIONS</p>
 
-            <h2>Mes projets récents</h2>
+            <h2 data-i18n="proj_h2">Mes projets récents</h2>
 
-            <p class="projects-description">
-                Découvrez quelques projets sur lesquels
-                je travaille dans le cadre de mon apprentissage.
-            </p>
+            <p class="projects-description" data-i18n="proj_desc">Découvrez quelques projets sur lesquels je travaille dans le cadre de mon apprentissage.</p>
 
             <div class="projects-grid">
 
@@ -54,11 +52,7 @@
 
                         <h3>Soutenance+</h3>
 
-                        <p>
-                            Une plateforme web permettant aux étudiants
-                            de soumettre leurs présentations de mémoire
-                            et aux maîtres de mémoire de les superviser.
-                        </p>
+                        <p data-i18n="proj1_text">Une plateforme web permettant aux étudiants de soumettre leurs présentations de mémoire et aux maîtres de mémoire de les superviser.</p>
 
                         <div class="project-tags">
                             <span>Nuxt</span>
@@ -66,9 +60,7 @@
                             <span>MySQL</span>
                         </div>
 
-                        <a href="https://github.com/Tresor82/soutenance-new" target="_blank" rel="noopener" class="project-link">
-                            Voir le code sur GitHub →
-                        </a>
+                        <a href="https://github.com/Tresor82/soutenance-new" target="_blank" rel="noopener" class="project-link" data-i18n="proj_link">Voir le code sur GitHub →</a>
 
                     </div>
 
@@ -85,11 +77,7 @@
 
                         <h3>Face AI</h3>
 
-                        <p>
-                            Une application basée sur l'intelligence
-                            artificielle permettant d'estimer l'âge
-                            et le genre apparent à partir d'une image.
-                        </p>
+                        <p data-i18n="proj2_text">Une application basée sur l'intelligence artificielle permettant d'estimer l'âge et le genre apparent à partir d'une image.</p>
 
                         <div class="project-tags">
                             <span>Python</span>
@@ -97,9 +85,7 @@
                             <span>FastAPI</span>
                         </div>
 
-                        <a href="https://github.com/Tresor82/genre-reconnaissance-cnn" target="_blank" rel="noopener" class="project-link">
-                            Voir le code sur GitHub →
-                        </a>
+                        <a href="https://github.com/Tresor82/genre-reconnaissance-cnn" target="_blank" rel="noopener" class="project-link" data-i18n="proj_link">Voir le code sur GitHub →</a>
 
                     </div>
 
@@ -114,13 +100,9 @@
 
                     <div class="project-content">
 
-                        <h3>Site web personnel</h3>
+                        <h3 data-i18n="proj3_title">Site web personnel</h3>
 
-                        <p>
-                            Un portfolio moderne conçu pour présenter
-                            mes compétences, mon parcours académique
-                            et mes réalisations professionnelles.
-                        </p>
+                        <p data-i18n="proj3_text">Un portfolio moderne conçu pour présenter mes compétences, mon parcours académique et mes réalisations professionnelles.</p>
 
                         <div class="project-tags">
                             <span>HTML</span>
@@ -128,9 +110,7 @@
                             <span>JavaScript</span>
                         </div>
 
-                        <a href="https://github.com/Tresor82/portfolio" target="_blank" rel="noopener" class="project-link">
-                            Voir le code sur GitHub →
-                        </a>
+                        <a href="https://github.com/Tresor82/portfolio" target="_blank" rel="noopener" class="project-link" data-i18n="proj_link">Voir le code sur GitHub →</a>
 
                     </div>
 
@@ -146,16 +126,16 @@
     <div class="marquee">
         <div class="marquee-track">
             <div class="marquee-group">
-                <span>DÉVELOPPEMENT WEB</span><span>✦</span>
-                <span>INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
+                <span data-i18n="mq_web">DÉVELOPPEMENT WEB</span><span>✦</span>
+                <span data-i18n="mq_ai">INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
                 <span>NUXT</span><span>✦</span>
                 <span>VUE.JS</span><span>✦</span>
                 <span>PYTHON</span><span>✦</span>
                 <span>TENSORFLOW</span><span>✦</span>
             </div>
             <div class="marquee-group" aria-hidden="true">
-                <span>DÉVELOPPEMENT WEB</span><span>✦</span>
-                <span>INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
+                <span data-i18n="mq_web">DÉVELOPPEMENT WEB</span><span>✦</span>
+                <span data-i18n="mq_ai">INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
                 <span>NUXT</span><span>✦</span>
                 <span>VUE.JS</span><span>✦</span>
                 <span>PYTHON</span><span>✦</span>
@@ -167,18 +147,18 @@
     <div class="marquee reverse">
         <div class="marquee-track">
             <div class="marquee-group">
-                <span>APPRENDRE EN CONSTRUISANT</span><span>✦</span>
-                <span>CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
-                <span>SOUCI DU DÉTAIL</span><span>✦</span>
-                <span>CRÉATIVITÉ</span><span>✦</span>
-                <span>RIGUEUR</span><span>✦</span>
+                <span data-i18n="mq2_learn">APPRENDRE EN CONSTRUISANT</span><span>✦</span>
+                <span data-i18n="mq2_clarity">CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
+                <span data-i18n="mq2_detail">SOUCI DU DÉTAIL</span><span>✦</span>
+                <span data-i18n="mq2_creativity">CRÉATIVITÉ</span><span>✦</span>
+                <span data-i18n="mq2_rigor">RIGUEUR</span><span>✦</span>
             </div>
             <div class="marquee-group" aria-hidden="true">
-                <span>APPRENDRE EN CONSTRUISANT</span><span>✦</span>
-                <span>CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
-                <span>SOUCI DU DÉTAIL</span><span>✦</span>
-                <span>CRÉATIVITÉ</span><span>✦</span>
-                <span>RIGUEUR</span><span>✦</span>
+                <span data-i18n="mq2_learn">APPRENDRE EN CONSTRUISANT</span><span>✦</span>
+                <span data-i18n="mq2_clarity">CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
+                <span data-i18n="mq2_detail">SOUCI DU DÉTAIL</span><span>✦</span>
+                <span data-i18n="mq2_creativity">CRÉATIVITÉ</span><span>✦</span>
+                <span data-i18n="mq2_rigor">RIGUEUR</span><span>✦</span>
             </div>
         </div>
     </div>
@@ -190,9 +170,7 @@
 
             <a href="index.html" class="logo">Esther<span>.</span></a>
 
-            <p>
-                Développeuse Web en devenir | Marie Esther
-            </p>
+            <p data-i18n="foot_tag">Développeuse Web en devenir | Marie Esther</p>
 
             <div class="social-links">
 
@@ -206,9 +184,7 @@
 
             </div>
 
-            <p class="copyright">
-                © 2026 Marie Esther. Tous droits réservés.
-            </p>
+            <p class="copyright" data-i18n="foot_copy">© 2026 Marie Esther. Tous droits réservés.</p>
 
         </div>
 

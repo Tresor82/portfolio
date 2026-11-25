@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Marie Esther</title>
+    <title data-i18n="title_contact">Contact | Marie Esther</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,11 +18,12 @@
             </button>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="apropos.html" data-i18n="nav_about">À propos</a></li>
+                <li><a href="competences.html" data-i18n="nav_skills">Compétences</a></li>
+                <li><a href="projets.html" data-i18n="nav_projects">Projets</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                <li><button class="lang-toggle" id="langToggle" type="button">EN</button></li>
             </ul>
         </nav>
     </header>
@@ -34,13 +35,9 @@
 
             <p class="section-title">CONTACT</p>
 
-            <h2>Travaillons ensemble</h2>
+            <h2 data-i18n="contact_h2">Travaillons ensemble</h2>
 
-            <p class="contact-description">
-                Vous avez un projet, une opportunité de stage
-                ou simplement envie d'échanger ?
-                N'hésitez pas à me contacter.
-            </p>
+            <p class="contact-description" data-i18n="contact_desc">Vous avez un projet, une opportunité de stage ou simplement envie d'échanger ? N'hésitez pas à me contacter.</p>
 
             <div class="contact-content">
 
@@ -57,8 +54,8 @@
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
                         <div>
-                            <h3>Localisation</h3>
-                            <p>Cotonou, Bénin</p>
+                            <h3 data-i18n="contact_location">Localisation</h3>
+                            <p data-i18n="contact_city">Cotonou, Bénin</p>
                         </div>
                     </div>
 
@@ -66,7 +63,7 @@
                         <div class="contact-icon">💻</div>
                         <div>
                             <h3>GitHub</h3>
-                            <p>Mes projets informatiques</p>
+                            <p data-i18n="contact_github">Mes projets informatiques</p>
                         </div>
                     </div>
 
@@ -82,26 +79,28 @@
                     <input type="text"
                            name="name"
                            placeholder="Votre nom"
+                           data-i18n-placeholder="ph_name"
                            required>
 
                     <input type="email"
                            name="email"
                            placeholder="Votre adresse email"
+                           data-i18n-placeholder="ph_email"
                            required>
 
                     <input type="text"
                            name="subject"
                            placeholder="Sujet"
+                           data-i18n-placeholder="ph_subject"
                            required>
 
                     <textarea name="message"
                               placeholder="Votre message..."
+                              data-i18n-placeholder="ph_message"
                               rows="6"
                               required></textarea>
 
-                    <button type="submit" class="btn primary">
-                        Envoyer le message
-                    </button>
+                    <button type="submit" class="btn primary" data-i18n="btn_send">Envoyer le message</button>
 
                 </form>
 
@@ -111,6 +110,47 @@
 
     </section>
 
+    <!-- BANDES DE MOTS QUI DÉFILENT -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <div class="marquee-group">
+                <span data-i18n="mq_web">DÉVELOPPEMENT WEB</span><span>✦</span>
+                <span data-i18n="mq_ai">INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
+                <span>NUXT</span><span>✦</span>
+                <span>VUE.JS</span><span>✦</span>
+                <span>PYTHON</span><span>✦</span>
+                <span>TENSORFLOW</span><span>✦</span>
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+                <span data-i18n="mq_web">DÉVELOPPEMENT WEB</span><span>✦</span>
+                <span data-i18n="mq_ai">INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
+                <span>NUXT</span><span>✦</span>
+                <span>VUE.JS</span><span>✦</span>
+                <span>PYTHON</span><span>✦</span>
+                <span>TENSORFLOW</span><span>✦</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee reverse">
+        <div class="marquee-track">
+            <div class="marquee-group">
+                <span data-i18n="mq2_learn">APPRENDRE EN CONSTRUISANT</span><span>✦</span>
+                <span data-i18n="mq2_clarity">CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
+                <span data-i18n="mq2_detail">SOUCI DU DÉTAIL</span><span>✦</span>
+                <span data-i18n="mq2_creativity">CRÉATIVITÉ</span><span>✦</span>
+                <span data-i18n="mq2_rigor">RIGUEUR</span><span>✦</span>
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+                <span data-i18n="mq2_learn">APPRENDRE EN CONSTRUISANT</span><span>✦</span>
+                <span data-i18n="mq2_clarity">CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
+                <span data-i18n="mq2_detail">SOUCI DU DÉTAIL</span><span>✦</span>
+                <span data-i18n="mq2_creativity">CRÉATIVITÉ</span><span>✦</span>
+                <span data-i18n="mq2_rigor">RIGUEUR</span><span>✦</span>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer">
 
@@ -118,9 +158,7 @@
 
             <a href="index.html" class="logo">Esther<span>.</span></a>
 
-            <p>
-                Développeuse Web en devenir | Marie Esther
-            </p>
+            <p data-i18n="foot_tag">Développeuse Web en devenir | Marie Esther</p>
 
             <div class="social-links">
 
@@ -134,51 +172,9 @@
 
             </div>
 
-            <p class="copyright">
-                © 2026 Marie Esther. Tous droits réservés.
-            </p>
+            <p class="copyright" data-i18n="foot_copy">© 2026 Marie Esther. Tous droits réservés.</p>
 
         </div>
-            <!-- BANDES DE MOTS QUI DÉFILENT -->
-    <div class="marquee">
-        <div class="marquee-track">
-            <div class="marquee-group">
-                <span>DÉVELOPPEMENT WEB</span><span>✦</span>
-                <span>INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
-                <span>NUXT</span><span>✦</span>
-                <span>VUE.JS</span><span>✦</span>
-                <span>PYTHON</span><span>✦</span>
-                <span>TENSORFLOW</span><span>✦</span>
-            </div>
-            <div class="marquee-group" aria-hidden="true">
-                <span>DÉVELOPPEMENT WEB</span><span>✦</span>
-                <span>INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
-                <span>NUXT</span><span>✦</span>
-                <span>VUE.JS</span><span>✦</span>
-                <span>PYTHON</span><span>✦</span>
-                <span>TENSORFLOW</span><span>✦</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="marquee reverse">
-        <div class="marquee-track">
-            <div class="marquee-group">
-                <span>APPRENDRE EN CONSTRUISANT</span><span>✦</span>
-                <span>CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
-                <span>SOUCI DU DÉTAIL</span><span>✦</span>
-                <span>CRÉATIVITÉ</span><span>✦</span>
-                <span>RIGUEUR</span><span>✦</span>
-            </div>
-            <div class="marquee-group" aria-hidden="true">
-                <span>APPRENDRE EN CONSTRUISANT</span><span>✦</span>
-                <span>CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
-                <span>SOUCI DU DÉTAIL</span><span>✦</span>
-                <span>CRÉATIVITÉ</span><span>✦</span>
-                <span>RIGUEUR</span><span>✦</span>
-            </div>
-        </div>
-    </div>
 
     </footer>
 

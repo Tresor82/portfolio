@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marie Esther | Développeuse Web</title>
+    <title data-i18n="title_home">Marie Esther | Développeuse Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,11 +18,12 @@
             </button>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="apropos.html" data-i18n="nav_about">À propos</a></li>
+                <li><a href="competences.html" data-i18n="nav_skills">Compétences</a></li>
+                <li><a href="projets.html" data-i18n="nav_projects">Projets</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                <li><button class="lang-toggle" id="langToggle" type="button">EN</button></li>
             </ul>
         </nav>
     </header>
@@ -31,24 +32,17 @@
     <section class="hero" id="accueil">
 
         <div class="hero-content">
-            <p class="welcome">BIENVENUE SUR MON PORTFOLIO</p>
+            <p class="welcome" data-i18n="welcome">BIENVENUE SUR MON PORTFOLIO</p>
 
-            <h1>
-                Bonjour, je suis<br>
-                <span>Marie Esther</span>
-            </h1>
+            <h1 data-i18n="hero_title">Bonjour, je suis<br><span>Marie Esther</span></h1>
 
-            <h2>Développeuse Web en devenir</h2>
+            <h2 data-i18n="hero_sub">Développeuse Web en devenir</h2>
 
-            <p class="description">
-                Étudiante en systèmes informatiques et logiciels à HECM.
-                Je conçois des expériences web modernes, élégantes
-                et interactives.
-            </p>
+            <p class="description" data-i18n="hero_desc">Étudiante en systèmes informatiques et logiciels à HECM. Je conçois des expériences web modernes, élégantes et interactives.</p>
 
             <div class="buttons">
-                <a href="projets.html" class="btn primary">Découvrir mes projets</a>
-                <a href="contact.html" class="btn secondary">Me contacter</a>
+                <a href="projets.html" class="btn primary" data-i18n="btn_projects">Découvrir mes projets</a>
+                <a href="contact.html" class="btn secondary" data-i18n="btn_contact">Me contacter</a>
             </div>
         </div>
 
@@ -58,76 +52,57 @@
         </div>
 
     </section>
-        <!-- RÉSUMÉ DES PAGES -->
+
+    <!-- RÉSUMÉ DES PAGES -->
     <section class="summary">
 
         <div class="summary-container">
 
-            <p class="section-title">DÉCOUVRIR</p>
+            <p class="section-title" data-i18n="sum_label">DÉCOUVRIR</p>
 
-            <h2>Mon univers en un coup d'œil</h2>
+            <h2 data-i18n="sum_title">Mon univers en un coup d'œil</h2>
 
             <div class="summary-item">
                 <div class="summary-head">
                     <span class="summary-number">01</span>
-                    <h3>À propos</h3>
+                    <h3 data-i18n="nav_about">À propos</h3>
                 </div>
                 <div class="summary-body">
-                    <p>
-                        Je suis étudiante en deuxième année de Licence en
-                        Systèmes Informatiques et Logiciels à HECM, à Cotonou.
-                        Passionnée par le développement web et l'intelligence
-                        artificielle, j'apprends en construisant de vrais projets.
-                    </p>
-                    <a href="apropos.html" class="summary-link">Me découvrir →</a>
+                    <p data-i18n="sum1_text">Je suis étudiante en deuxième année de Licence en Systèmes Informatiques et Logiciels à HECM, à Cotonou. Passionnée par le développement web et l'intelligence artificielle, j'apprends en construisant de vrais projets.</p>
+                    <a href="apropos.html" class="summary-link" data-i18n="sum1_link">Me découvrir →</a>
                 </div>
             </div>
 
             <div class="summary-item">
                 <div class="summary-head">
                     <span class="summary-number">02</span>
-                    <h3>Compétences</h3>
+                    <h3 data-i18n="nav_skills">Compétences</h3>
                 </div>
                 <div class="summary-body">
-                    <p>
-                        HTML, CSS, JavaScript, Vue.js et Nuxt, Python et
-                        TensorFlow : je développe mes compétences techniques
-                        chaque jour. J'ajoute à cela la création de contenu,
-                        le travail en équipe et l'organisation.
-                    </p>
-                    <a href="competences.html" class="summary-link">Voir mes compétences →</a>
+                    <p data-i18n="sum2_text">HTML, CSS, JavaScript, Vue.js et Nuxt, Python et TensorFlow : je développe mes compétences techniques chaque jour. J'ajoute à cela la création de contenu, le travail en équipe et l'organisation.</p>
+                    <a href="competences.html" class="summary-link" data-i18n="sum2_link">Voir mes compétences →</a>
                 </div>
             </div>
 
             <div class="summary-item">
                 <div class="summary-head">
                     <span class="summary-number">03</span>
-                    <h3>Projets</h3>
+                    <h3 data-i18n="nav_projects">Projets</h3>
                 </div>
                 <div class="summary-body">
-                                        <p>
-                        Soutenance+, une plateforme pour préparer les soutenances
-                        de mémoire, Face AI, une application d'intelligence
-                        artificielle qui analyse une image, ce portfolio,
-                        et bien d'autres encore : chaque projet réalisé pendant
-                        mes études m'apprend quelque chose de nouveau.
-                    </p>
-                    <a href="projets.html" class="summary-link">Voir mes projets →</a>
+                    <p data-i18n="sum3_text">Soutenance+, une plateforme pour préparer les soutenances de mémoire, Face AI, une application d'intelligence artificielle qui analyse une image, ce portfolio, et bien d'autres encore : chaque projet réalisé pendant mes études m'apprend quelque chose de nouveau.</p>
+                    <a href="projets.html" class="summary-link" data-i18n="sum3_link">Voir mes projets →</a>
                 </div>
             </div>
 
             <div class="summary-item">
                 <div class="summary-head">
                     <span class="summary-number">04</span>
-                    <h3>Contact</h3>
+                    <h3 data-i18n="nav_contact">Contact</h3>
                 </div>
                 <div class="summary-body">
-                    <p>
-                        Je recherche des opportunités, notamment un stage.
-                        Vous avez un projet ou envie d'échanger ? Écrivez-moi,
-                        je réponds avec plaisir.
-                    </p>
-                    <a href="contact.html" class="summary-link">Me contacter →</a>
+                    <p data-i18n="sum4_text">Je recherche des opportunités, notamment un stage. Vous avez un projet ou envie d'échanger ? Écrivez-moi, je réponds avec plaisir.</p>
+                    <a href="contact.html" class="summary-link" data-i18n="sum4_link">Me contacter →</a>
                 </div>
             </div>
 
@@ -139,16 +114,16 @@
     <div class="marquee">
         <div class="marquee-track">
             <div class="marquee-group">
-                <span>DÉVELOPPEMENT WEB</span><span>✦</span>
-                <span>INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
+                <span data-i18n="mq_web">DÉVELOPPEMENT WEB</span><span>✦</span>
+                <span data-i18n="mq_ai">INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
                 <span>NUXT</span><span>✦</span>
                 <span>VUE.JS</span><span>✦</span>
                 <span>PYTHON</span><span>✦</span>
                 <span>TENSORFLOW</span><span>✦</span>
             </div>
             <div class="marquee-group" aria-hidden="true">
-                <span>DÉVELOPPEMENT WEB</span><span>✦</span>
-                <span>INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
+                <span data-i18n="mq_web">DÉVELOPPEMENT WEB</span><span>✦</span>
+                <span data-i18n="mq_ai">INTELLIGENCE ARTIFICIELLE</span><span>✦</span>
                 <span>NUXT</span><span>✦</span>
                 <span>VUE.JS</span><span>✦</span>
                 <span>PYTHON</span><span>✦</span>
@@ -157,22 +132,21 @@
         </div>
     </div>
 
-
     <div class="marquee reverse">
         <div class="marquee-track">
             <div class="marquee-group">
-                <span>APPRENDRE EN CONSTRUISANT</span><span>✦</span>
-                <span>CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
-                <span>SOUCI DU DÉTAIL</span><span>✦</span>
-                <span>CRÉATIVITÉ</span><span>✦</span>
-                <span>RIGUEUR</span><span>✦</span>
+                <span data-i18n="mq2_learn">APPRENDRE EN CONSTRUISANT</span><span>✦</span>
+                <span data-i18n="mq2_clarity">CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
+                <span data-i18n="mq2_detail">SOUCI DU DÉTAIL</span><span>✦</span>
+                <span data-i18n="mq2_creativity">CRÉATIVITÉ</span><span>✦</span>
+                <span data-i18n="mq2_rigor">RIGUEUR</span><span>✦</span>
             </div>
             <div class="marquee-group" aria-hidden="true">
-                <span>APPRENDRE EN CONSTRUISANT</span><span>✦</span>
-                <span>CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
-                <span>SOUCI DU DÉTAIL</span><span>✦</span>
-                <span>CRÉATIVITÉ</span><span>✦</span>
-                <span>RIGUEUR</span><span>✦</span>
+                <span data-i18n="mq2_learn">APPRENDRE EN CONSTRUISANT</span><span>✦</span>
+                <span data-i18n="mq2_clarity">CLARTÉ AVANT COMPLEXITÉ</span><span>✦</span>
+                <span data-i18n="mq2_detail">SOUCI DU DÉTAIL</span><span>✦</span>
+                <span data-i18n="mq2_creativity">CRÉATIVITÉ</span><span>✦</span>
+                <span data-i18n="mq2_rigor">RIGUEUR</span><span>✦</span>
             </div>
         </div>
     </div>
@@ -184,9 +158,7 @@
 
             <a href="index.html" class="logo">Esther<span>.</span></a>
 
-            <p>
-                Développeuse Web en devenir | Marie Esther
-            </p>
+            <p data-i18n="foot_tag">Développeuse Web en devenir | Marie Esther</p>
 
             <div class="social-links">
 
@@ -200,9 +172,7 @@
 
             </div>
 
-            <p class="copyright">
-                © 2026 Marie Esther. Tous droits réservés.
-            </p>
+            <p class="copyright" data-i18n="foot_copy">© 2026 Marie Esther. Tous droits réservés.</p>
 
         </div>
 
