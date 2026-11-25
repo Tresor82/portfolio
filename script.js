@@ -282,3 +282,31 @@ document.querySelectorAll(".lang-btn").forEach(btn => {
 });
 
 applyLang(currentLang);
+
+
+// ICÔNES DES RÉSEAUX SOCIAUX
+
+const iconStyles = document.createElement("link");
+iconStyles.rel = "stylesheet";
+iconStyles.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";
+document.head.appendChild(iconStyles);
+
+const socialIcons = {
+    "github.com": "fa-github",
+    "linkedin.com": "fa-linkedin-in",
+    "wa.me": "fa-whatsapp",
+    "facebook.com": "fa-facebook-f"
+};
+
+document.querySelectorAll(".social-links a").forEach(link => {
+    const host = new URL(link.href).hostname.replace("www.", "");
+    const icon = socialIcons[host];
+
+    if (icon) {
+        const name = link.textContent.trim();
+        link.setAttribute("aria-label", name);
+        link.setAttribute("title", name);
+        link.innerHTML = '<i class="fa-brands ' + icon + '"></i>';
+        link.classList.add("social-icon");
+    }
+});
