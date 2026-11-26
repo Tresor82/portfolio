@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 /* RÉINITIALISATION */
 * {
     margin: 0;
@@ -44,6 +46,7 @@ header {
     display: flex;
     gap: 30px;
     list-style: none;
+    align-items: center;
 }
 
 .nav-links a {
@@ -728,6 +731,7 @@ header {
         padding: 20px;
         display: none;
         flex-direction: column;
+        align-items: flex-start;
         gap: 20px;
     }
 
@@ -1040,23 +1044,37 @@ body::before {
     }
 }
 
-/* BOUTON DE LANGUE */
+/* SÉLECTEUR DE LANGUE FR | EN */
 
-.lang-toggle {
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-btn {
     background: transparent;
-    border: 1px solid #a855f7;
-    color: #a855f7;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #ccc;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    padding: 4px 2px;
     transition: 0.3s;
 }
 
-.lang-toggle:hover {
-    background: #a855f7;
-    color: white;
+.lang-btn:hover {
+    color: #a855f7;
+}
+
+.lang-btn.active {
+    color: #a855f7;
+    border-bottom-color: #a855f7;
+}
+
+.lang-sep {
+    color: #555;
 }
 
 /* ICÔNES DES RÉSEAUX SOCIAUX */
@@ -1079,4 +1097,25 @@ body::before {
     border-color: #a855f7;
     transform: translateY(-3px);
     box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+/* LOGO MANUSCRIT */
+
+.logo,
+.footer .logo {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 34px;
+    font-weight: normal;
+    color: #a855f7;
+}
+
+.logo span {
+    display: none;
+}
+
+.logo::after {
+    content: " 💜";
+    font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-size: 0.6em;
+    vertical-align: middle;
 }
